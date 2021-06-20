@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&display=swap');
+
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+body {
+  @apply bg-white text-black dark:bg-coolGray dark:text-white;
+}
+
+/* Write your own custom component styles here */
+@font-face {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+.scrollbars-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbars-hidden {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.-z-1 {
+  z-index: -1;
+}
+
+.toggle-dot {
+  transition: all 0.3s ease-in-out;
+}
+
+.text-stroke {
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: white;
+}
+
+#toogle-theme:checked ~ .toggle-dot {
+  transform: translateX(28px);
+}
