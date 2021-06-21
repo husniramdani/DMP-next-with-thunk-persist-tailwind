@@ -1,3 +1,1 @@
-# Spindyzel website
-
-This is [spindyzel](https://spindyzel.com) webs.
+# Next with thunk + persist + tailwind
